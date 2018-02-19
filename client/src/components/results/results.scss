@@ -1,0 +1,62 @@
+@import "~bpk-mixins";
+
+.result-box {
+	position:relative;
+  //display: flex;
+  align-items: center;
+  padding: $bpk-spacing-sm $bpk-spacing-sm;
+  background-color: $bpk-autosuggest-list-background-color;
+  margin:10px;
+  border-radius:5px;
+
+  & .result{
+  	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	margin:15px;
+
+  	& .journey-details{
+  		display: flex;
+  		align-items: center;
+      & .carrier-logo{
+          width:20px;
+          height:20px;
+      }
+  		
+      & > div{
+	  		margin-right:20px;
+	  	
+	  		& span.place-name{
+	  			color:$bpk-color-gray-300;
+	  		}
+  		}
+  	}
+	& .duration{
+		text-align:right;
+		color:$bpk-color-gray-300;
+	}	
+  }
+  & .price{
+  		color:#000;
+  		 @include bpk-heading-2();
+  		 padding:0;
+  	}
+
+  
+
+ 	& .select{
+		
+	  	position:absolute;
+	  	right:10px;
+	  	bottom:10px;
+	  	padding: 5px 40px;
+	}
+}
+
+.fly-direct{
+	color:green;
+}
+.fly-with-stops{
+	color:red;	
+}
+

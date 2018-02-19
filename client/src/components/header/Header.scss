@@ -1,0 +1,39 @@
+@import "~bpk-mixins";
+
+.header-info{
+	background-color: $bpk-color-blue-600;
+	color:#fff;
+	padding:20px;
+	& .travel-details{
+		font-size:34px;
+		margin-bottom:10px;
+	
+	}
+	& .travel-category{
+
+	}	
+
+}
+
+.filters{
+	background-color:#fff;
+	padding:20px;
+	display: flex;
+  	align-items: center;
+  	justify-content: space-between;
+  	& > div{
+  		align-items: center;
+  		@include bpk-button();
+  		@include bpk-button--link();
+
+
+  	}
+  	& .price-alert{
+  			display: flex;
+  			align-items: center;
+  			font-size:12px;
+  			& .bell{
+  				margin-top: 7px;
+  			}
+  		}
+}

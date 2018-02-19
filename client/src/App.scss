@@ -1,0 +1,23 @@
+@import "~bpk-stylesheets/index";
+
+body{
+	background-color:$bpk-color-gray-100;
+	margin:0 auto;
+
+}
+
+.App{
+	/*max-width:480px;*/
+	margin:0 auto;
+	
+}
+
+
+.loading{
+	text-align:center;
+	margin-top:20px;	
+}
+.loading-hidden{
+	@include bpk-visually-hidden;;
+}
+
